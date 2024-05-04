@@ -23,12 +23,13 @@ export const ShoppingPage = () => {
                 }}
             >
                 {
-                    (msg) => (
+                    (args) => (
                         <div>
                             <ProductImage className="custom-image" style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }} />
                             <ProductTitle className="text-bold" />
                             <ProductButtons className="custom-buttons" />
-                            <h1>{msg}</h1>
+
+                            <button onClick={args.reset}>Reset</button>
                         </div>
                     )
                 }
